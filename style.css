@@ -1,0 +1,52 @@
+
+body {
+    box-shadow: 0 0 0 1px #cacaca, 0 0 0 4px #eee;
+    background-image: url("./images/background.jpg");
+    margin: 15px;
+    display: block;
+    padding: 30px;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+html {
+    line-height: 1.15;
+    direction: ltr;
+    display: block;
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+html, body {
+    max-width: 80em;
+    vertical-align: middle;
+}
+
+#About {
+    display: flex;
+    font-size: 18px;
+}
+#Para1{
+    flex: 1;
+}
+#Photo1 {
+    max-width: 65%;
+    max-height: 65%;
+}
+
+#Header {
+    display: flex;
+}
+
+#Name {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-size: 55px;
+    flex: 1;
+}
+
+#ContactList {
+    flex: 0.3;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top: 0px;
+    
+}
