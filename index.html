@@ -21,8 +21,19 @@
         </ul>
     </div>
     <div id="About">
-        <p id="Para1"></p>
+        <p id="Para1">Tester!</p>
+        <button id="testerToHello" type="button" onclick="myFunction()">Click Me!</button>
     </div>
-    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Para1");
+            if (x.innerHTML === "Whoa!!") {
+                x.innerHTML = "Awesommeeee";
+            } else {
+                x.innerHTML = "Whoa!!";
+            }
+        }
+    </script>
 </body>
 </html>
+

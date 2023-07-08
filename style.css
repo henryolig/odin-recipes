@@ -1,7 +1,7 @@
 
 body {
     box-shadow: 0 0 0 1px #cacaca, 0 0 0 4px #eee;
-    background-image: url("./images/background.jpg");
+    /* background-image: url("./images/background.jpg"); */
     margin: 15px;
     display: block;
     padding: 30px;
@@ -33,6 +33,16 @@ html, body {
     max-height: 65%;
 }
 
+#testerToHello {
+    max-width: 100px;
+    max-height: 40px;
+    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: rgb(4, 70, 12);
+    border-bottom-color: #FF738B;
+    border-right-color: #FF738B;
+}
+
 #Header {
     display: flex;
 }
@@ -47,6 +57,6 @@ html, body {
     flex: 0.3;
     font-family: 'Playfair Display', 'Times New Roman', Times, serif;
     font-size: 18px;
-    margin-top: 0px;
+    margin-top: 12px;
     
 }
