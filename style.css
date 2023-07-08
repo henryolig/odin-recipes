@@ -4,7 +4,7 @@ body {
     margin: 15px;
     display: block;
     padding: 30px;
-    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 html {
@@ -47,14 +47,14 @@ html, body {
 }
 
 #Name {
-    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 55px;
     flex: 1;
 }
 
 #ContactList {
     flex: 0.3;
-    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     margin-top: 12px;
     
