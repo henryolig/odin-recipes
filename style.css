@@ -1,25 +1,4 @@
 
-body {
-    box-shadow: 0 0 0 1px #cacaca, 0 0 0 4px #eee;
-    margin: 15px;
-    display: block;
-    padding: 30px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-html {
-    line-height: 1.15;
-    direction: ltr;
-    display: block;
-    padding-right: 5em;
-    padding-left: 5em;
-}
-
-html, body {
-    max-width: 80em;
-    vertical-align: middle;
-}
-
 #About {
     display: flex;
     font-size: 18px;
@@ -42,20 +21,43 @@ html, body {
     border-right-color: #FF738B;
 }
 
-#Header {
+#GithubButton, #LinkedInButton, #ResumeButton {
+    max-width: 100px;
+    max-height: 40px;
+    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: rgb(4, 70, 12);
+    border-bottom-color: #FF738B;
+    border-right-color: #FF738B;
+    cursor: pointer;
+}
+
+.Major {
     display: flex;
+    margin: 150px;
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 0 0 0 1px #cacaca, 0 0 0 4px #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #Name {
     font-family: 'Times New Roman', Times, serif;
     font-size: 55px;
-    flex: 1;
+    text-align: left;
+    width: 300px;
+    background: none;
+    border: none;
+    flex-grow: 1;
 }
 
 #ContactList {
-    flex: 0.3;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    margin-top: 12px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
     
 }

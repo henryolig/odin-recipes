@@ -11,27 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="Header">
-        <h1 id="Name">Henry Olig</h1>
-        <ul id="ContactList">
-            <li>Email: Henry@olig.dev</li>
-            <li><a href="https://github.com/henryolig/">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/henry-olig/">LinkedIn</a></li>
-            <li><a href="./images/Henry_Olig_Resume.pdf">Resume</a></li>
-        </ul>
+    <div id="Header" class="Major">
+        <button id="Name" counter=10 type="button" onclick="secretPage()">Henry Olig</h1>
+        <div id="ContactList">
+                <button id="GithubButton" type="button" onclick="window.location.href='https://github.com/henryolig/';">GitHub</button>
+                <button id="LinkedInButton" type="button" onclick="window.location.href='https://www.linkedin.com/in/henry-olig/';">LinkedIn</button>
+                <button id="ResumeButton" type="button" onclick="window.location.href='./images/Henry_Olig_Resume.pdf';">Resume</button>
+        </div>
     </div>
-    <div id="About">
+    <div id="About" class="Major">
         <p id="Para1">Tester!</p>
-        <button id="testerToHello" type="button" onclick="myFunction()">Click Me!</button>
+        <button id="testerToHello" type="button" onclick="buttonToggle('Para1')">Click Me!</button>
     </div>
 </body>
 <script>
-    function myFunction() {
-        var x = document.getElementById("Para1");
+    function buttonToggle(buttonname) {
+        var x = document.getElementById(buttonname);
         if (x.innerHTML === "Whoa!!") {
             x.innerHTML = "Awesommeeee";
         } else {
             x.innerHTML = "Whoa!!";
+        }
+    }
+    function secretPage() {
+        var x = document.getElementById("Name");
+        y = x.getAttribute('counter')
+        if (y < 1) {
+            window.location.href='./altPages/secretforaq.html';
+        }
+        else {
+            x.setAttribute('counter', y - 1)
         }
     }
 </script>
