@@ -1,0 +1,79 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+body {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    
+    background: #dbc89d;
+    padding: 30px;
+}
+body {margin: 0;font-family: "Segoe UI", Arial, Helvetica, Sans Serif;} a {text-decoration: none; display: inline-block; margin-right: 10px; color:#fff;}
+#About {
+    display: flex;
+    font-size: 18px;
+}
+#Para1{
+    flex: 1;
+}
+#Photo1 {
+    max-width: 65%;
+    max-height: 65%;
+}
+
+#testerToHello {
+    max-width: 100px;
+    max-height: 40px;
+    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: rgb(4, 70, 12);
+    border-bottom-color: #FF738B;
+    border-right-color: #FF738B;
+}
+
+#GithubButton, #LinkedInButton, #ResumeButton {
+    max-width: 100px;
+    max-height: 40px;
+    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: rgb(4, 70, 12);
+    border-bottom-color: #FF738B;
+    border-right-color: #FF738B;
+    cursor: pointer;
+}
+
+.Major {
+    display: flex;
+    margin: 150px;
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 0 0 0 1px #cacaca, 0 0 0 4px #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#Name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 55px;
+    text-align: left;
+    width: 300px;
+    background: none;
+    border: none;
+    flex-grow: 1;
+}
+
+#ContactList {
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
