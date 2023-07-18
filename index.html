@@ -14,8 +14,16 @@
     <h1 id="Nameplate"></h1>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
+        if (navigator.userAgent.match(/Mobile/i)) {
+            var stringList = ["Hello.","My name is Henry Olig.", "Welcome to my website.^1300", "Click anywhere to continue"]
+        }
+        else {
+            var stringList = ["Hello.","My name is Henry Olig.", "Welcome to my website.^1300 Click anywhere to continue"]
+        }
+    </script>
+    <script>
         var typed = new Typed('#Nameplate', {
-        strings: ["Hello.","My name is Henry Olig.", "Welcome to my website.^1300 \nClick anywhere to continue"],
+        strings: stringList,
         showCursor: false,
         typeSpeed: 60,
         backSpeed: 25,
