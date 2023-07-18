@@ -14,6 +14,17 @@
         transform: translateX(0%);
     }
 } */
+@media only screen and (max-width: 1200px) {
+    #Nameplate {
+        font-size: 6em;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #Nameplate {
+        font-size: 8em;
+    }
+}
+
 body {
     background: #ebebeb;
     height: 90vh;
