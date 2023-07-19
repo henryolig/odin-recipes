@@ -14,6 +14,25 @@
         transform: translateX(0%);
     }
 } */
+
+@keyframes clicker {
+    0% {
+        box-shadow: inset 0 0 0 0 #ebebeb;
+    }
+    100% {
+        box-shadow: inset 240px 0 0 0 #ebebeb;
+    }
+}
+
+@keyframes out {
+    from {
+      box-shadow: inset -240px 0 0 0 #ebebeb;
+    }
+    to {
+      box-shadow: inset 0 0 0 0 #ebebeb;
+    }
+  }
+
 @media only screen and (max-width: 1200px) {
     #Nameplate {
         font-size: 6em;
@@ -38,7 +57,8 @@ body {
 #Nameplate {  
     /* This section calls the slideInFromLeft animation we defined above */
     /* animation: 1s ease-out 0s 1 slideInFromLeft; */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "athelas", serif;
+    font-weight: 600;
     text-align: center;
 }
 /* body {margin: 0;font-family: "Segoe UI", Arial, Helvetica, Sans Serif;} a {text-decoration: none; display: inline-block; margin-right: 10px; color:#fff;} */
