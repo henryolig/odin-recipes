@@ -13,18 +13,19 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         if (navigator.userAgent.match(/Mobile/i)) {
-            var stringList = ['Hello.','Hello!^50 My name is Henry Olig.', "Welcome to my website.^1300", "Click anywhere to continue"];
+            var stringList = ['Hello.','Hello^100!^1200 My name is Henry Olig.', "Welcome to my website!^1100", "Click anywhere to continue"];
         }
         else {
-            var stringList = ['Hello.','Hello^150!^300 My name is Henry Olig.', "Welcome to my website.^1300 Click anywhere to continue"];
+            var stringList = ['Hello.','Hello^100!^1200 My name is Henry Olig.', "Welcome to my website!^1100 Click anywhere to continue"];
         }
     </script>
     <script>
         var typed = new Typed('#Nameplate', {
         strings: stringList,
         showCursor: false,
-        typeSpeed: 75,
-        backSpeed: 25,
+        backDelay: 600,
+        typeSpeed: 35,
+        backSpeed: 10,
         loop: true
         });
     </script>
