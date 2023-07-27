@@ -1,6 +1,6 @@
 @keyframes slideInFromLeft {
     0% {
-      transform: translateX(-100%);
+      transform: translateY(100%);
     }
     100% {
       transform: translateX(0);
@@ -9,7 +9,7 @@
   
 body {  
     /* This section calls the slideInFromLeft animation we defined above */
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
     background: #ebebeb;
     padding: 30px;
 }
@@ -34,6 +34,13 @@ body {
     cursor: pointer;
 }
 
+#Adjectives{
+    font-family: "athelas", serif;
+    font-size: 18px;
+    margin-top: 4px;
+    padding-top: 4px;
+}
+
 .Major {
     display: flex;
     margin: 150px;
@@ -53,6 +60,8 @@ body {
     border: none;
     flex-grow: 1;
     font-family: "athelas", serif;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
 }
 
 #ContactList {

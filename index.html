@@ -13,10 +13,10 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         if (navigator.userAgent.match(/Mobile/i)) {
-            var stringList = ['Hello.','Hello^100!^1200 My name is Henry Olig.', "Welcome to my website!^1100", "Click anywhere to continue"];
+            var stringList = ['Hello.','Hello^100!^1200 My name is Henry Olig.', "Welcome to my website!^1100", "Click anywhere to continue."];
         }
         else {
-            var stringList = ['Hello.','Hello^100!^1200 My name is Henry Olig.', "Welcome to my website!^1100 Click anywhere to continue"];
+            var stringList = ['Hello.','Hello^100!^1200 My name is Henry Olig.', "Click anywhere to continue"];
         }
     </script>
     <script>
@@ -31,11 +31,23 @@
     </script>
     <script>
         function navigate(){
-            document.getElementById("Nameplate").style = "display:none"
-            
+            plate = document.getElementById("Nameplate")
+            plate.animate(
+                [
+                    { transform: "translateY(0%)"},
+                    { transform: "translateY(-1000%)"},
+                ],
+                {
+                    duration: 400,
+                    easing: "ease-in"
+                }
+            )
+            setTimeout((function() {
+                plate.style = "display: none"
+            }), 370);
             setTimeout((function() {
                 window.location.href="./altPages/main.html"
-            }), 2000);
+            }), 400);
         }
     </script>
 </html>
