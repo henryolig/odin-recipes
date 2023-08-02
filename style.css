@@ -58,7 +58,7 @@ body {
 #Nameplate {  
     /* This section calls the slideInFromLeft animation we defined above */
     /* animation: 1s ease-out 0s 1 slideInFromLeft; */
-    font-family: "Roboto", sans-serif;
+    font-family: "athelas", serif;
     font-weight: 600;
     text-align: center;
     margin-left: 10px;
