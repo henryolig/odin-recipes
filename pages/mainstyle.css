@@ -6,6 +6,8 @@
       transform: translateX(0);
     }
 }
+
+
 #headshot {
     max-width: 150px;
     max-height: auto;
@@ -38,11 +40,20 @@ body {
     cursor: pointer;
     margin: 0;
     margin-top: 0px;
+    height: 6vh;
+    width: auto;
 }
 
 #ContactList {
     margin-top: 25px;
     justify-content: center;
+    display: flex;
+}
+
+#Aligner {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
 }
 
 #Name {
