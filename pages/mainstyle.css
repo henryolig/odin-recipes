@@ -7,10 +7,6 @@
     }
 }
 
-html {
-    transform: translateY(0);
-}
-
 #headshot {
     max-width: 150px;
     max-height: auto;
@@ -70,6 +66,20 @@ body {
     margin: 4px;
     pointer-events: none;
 }
+
+#AboutContainer {
+    margin-top: 1vh;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 5vh;
+}
+
+#About {
+    width: 80vw;
+    max-width: 1050px;
+    justify-content: space-around;
+}
+
 @media only screen and (max-width: 1200px) {
     #headshot {
         margin-bottom: 0px;
