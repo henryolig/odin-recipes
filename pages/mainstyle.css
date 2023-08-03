@@ -1,12 +1,15 @@
-@keyframes slideInFromLeft {
+@keyframes slideInFromBottom {
     0% {
       transform: translateY(100%);
     }
     100% {
-      transform: translateX(0);
+      transform: translateY(0);
     }
 }
 
+html {
+    transform: translateY(0);
+}
 
 #headshot {
     max-width: 150px;
@@ -21,7 +24,7 @@
 
 body {  
     /* This section calls the slideInFromLeft animation we defined above */
-    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+    animation: 0.5s ease-out 0s 1 slideInFromBottom;
     background: #ebebeb;
     padding: 30px;
     align-items: center;
