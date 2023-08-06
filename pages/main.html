@@ -12,27 +12,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header" class="Major">
+    <div id="header">
         <img src="../images/MalcYardsPhoto.JPEG" alt="Headshot" id="headshot">
-        <h1 id="Name" counter=10 type="button" onclick="secretPage()">Henry Olig</h1>
-    </div>
-    <div id="ContactList">
-        <div id="Aligner">
-            <img src="../images/github.png" id="GithubButton" onclick="window.location.href='https://github.com/henryolig/';" alt="GitHub">
-            <img src="../images/linkedin.png" id="LinkedInButton" onclick="window.location.href='https://www.linkedin.com/in/henry-olig/';" alt="LinkedIn">
-            <img src="../images/resume.png" id="ResumeButton" onclick="window.location.href='../images/Henry-Olig-Resume.pdf';" alt="Resume">
+        <div id="NameCL">
+            <h1 id="Name" counter=10 type="button" onclick="secretPage()">Henry Olig</h1>
+        <div id="Aligner" class="Container">
+            <div id="ContactList">
+                <img src="../images/github.png" id="GithubButton" class="Icon" onclick="window.location.href='https://github.com/henryolig/';" alt="GitHub">
+                <img src="../images/linkedin.png" id="LinkedInButton" class="Icon" onclick="window.location.href='https://www.linkedin.com/in/henry-olig/';" alt="LinkedIn">
+                <img src="../images/resume.png" id="ResumeButton" class="Icon" onclick="window.location.href='../images/Henry-Olig-Resume.pdf';" alt="Resume">
+            </div>
+        </div>
         </div>
     </div>
-    <div id="AboutContainer">
-        <div id="About" class="Major">
-            <p id="Para1">I am an ambitious and dedicated rising junior at the University of Minnesota, Twin Cities,
-                pursuing a B.S in Computer Science. With a passion for technology and a strong foundation in programming,
-                I remain eager to take on new challenges, learn from experienced professions, and contribute my creativity
-                and proficiency to cutting-edge projects. <br><br>
-                As a software engineer, my utmost priority is to maintain and develop robust, clean, and efficient code 
-                to best support my teams.
+    <div id="AboutContainer" class="Container">
+        <div id="About">
+            <p id="Para1">I am a rising junior at the University of Minnesota, Twin Cities,
+                pursuing a B.S in Computer Science. With my passion for technology and a strong foundation in programming,
+                I am eager to approach new challenges, learn from experienced professions, and find creative solutions
+                to current issues. <br><br>
             </p>
-            <button id="testerToHello" type="button" onclick="buttonToggle('Para1')">Click Me!</button>
+            <a href=mailto:"henry@olig.dev"><img src="../images/email.png" id="EmailButton" class="Icon" alt="Email Me!"></a>
         </div>
     </div>
 </body>

@@ -7,15 +7,26 @@
     }
 }
 
+.Icon {
+    cursor: pointer;
+    margin: 0;
+    margin-top: 0px;
+    width: 4.5vw;
+    min-width: 40px;
+    max-width: 50px;
+    height: auto;
+}
+
+#EmailButton {
+    min-width: 35px;
+    vertical-align: bottom;
+}
+
+
 #headshot {
     max-width: 150px;
-    max-height: auto;
+    max-height: 150px;
     border-radius: 50%;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    align-items: center;
-    box-shadow: 0 0 0 1px #cacaca, 0 0 0 4px #eee;
 }
 
 body {  
@@ -35,29 +46,32 @@ body {
     /* box-shadow: 0 0 0 1px #cacaca, 0 0 0 4px #eee; */
 }
 
-#GithubButton, #LinkedInButton, #ResumeButton {
-    font-family: "athelas", serif;
-    cursor: pointer;
-    margin: 0;
-    margin-top: 0px;
-    height: 4.5vw;
-    min-height: 40px;
-    max-height: 50px;
-    width: auto;
+#About {
+    width: 80vw;
+    max-width: 1050px;
+    justify-content: space-around;
 }
 
 #ContactList {
+    width: 15vw;
+    min-width: 150px;
+    max-width: 260px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Container {
     margin-top: 1vh;
     justify-content: center;
     display: flex;
     padding-bottom: 5vh;
 }
 
-#Aligner {
-    width: 15vw;
-    min-width: 150px;
+.Container {
+    margin-top: 1vh;
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
+    padding-bottom: 5vh;
 }
 
 #Name {
@@ -69,18 +83,9 @@ body {
     pointer-events: none;
 }
 
-#AboutContainer {
-    margin-top: 1vh;
-    justify-content: center;
-    display: flex;
-    padding-bottom: 5vh;
-}
 
-#About {
-    width: 80vw;
-    max-width: 1050px;
-    justify-content: space-around;
-}
+
+
 
 @media only screen and (max-width: 1200px) {
     #headshot {
@@ -94,9 +99,18 @@ body {
     #header{
         display: block;
     }
+    #About {
+        font-size: 17px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     #Name {
         margin-top: 35px;
+    }
+    #About {
+        font-size: calc(5px + 0.75vw)
+    }
+    #headshot {
+        margin-top: 3vh;
     }
 }

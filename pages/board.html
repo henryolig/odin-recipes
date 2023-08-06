@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"/>
+</head>
+<body>
+  <h1 onclick="swap('test')">Hello!</h1>
+  <button id="testerToHello" type="button" onclick="googleLogin()">Click Me!</button>
+  <img id="test" src="measf">
+    <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+  <script id="testscripts" type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js'
+
+    // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js'
+
+    // Add Firebase products that you want to use
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js'
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js'
+    firebase = initializeApp(firebaseConfig);
+    </script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyACRhfc_BOXk5-iigFbRtUmEUKslq8Ts1U",
+        authDomain: "personalwebsite-65b46.firebaseapp.com",
+        projectId: "personalwebsite-65b46",
+        storageBucket: "personalwebsite-65b46.appspot.com",
+        messagingSenderId: "660027046436",
+        appId: "1:660027046436:web:9bbb46260f730ca70cb6b1",
+        measurementId: "G-VQ6EY39E02"
+      }
+
+      
+      function googleLogin() {
+        const provider = new firebase.auth.GoogleAuthProvider();
+
+        firebase.auth().signInWithPopup(provider)
+
+          .then(result => {
+              const user = result.user;
+              document.write('Hello ${user.displayName}');
+          })
+      }
+    </script>
+
+
+</body>  
+</html>
