@@ -48,8 +48,7 @@ body {
 
 #About {
     width: 80vw;
-    max-width: 1050px;
-    justify-content: space-around;
+    max-width: 800px;
 }
 
 #ContactList {
@@ -82,6 +81,11 @@ body {
     margin: 4px;
     pointer-events: none;
 }
+#Languages {
+    width: 10ch;
+    margin-right: 0;
+    margin-left: 0;
+}
 
 
 
@@ -108,9 +112,9 @@ body {
         margin-top: 35px;
     }
     #About {
-        font-size: calc(5px + 0.75vw)
+        font-size: calc(14px + 0.25vw)
     }
     #headshot {
-        margin-top: 3vh;
+        margin-top: 3.5vh;
     }
 }

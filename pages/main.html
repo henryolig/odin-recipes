@@ -27,34 +27,16 @@
     </div>
     <div id="AboutContainer" class="Container">
         <div id="About">
-            <p id="Para1">I am a rising junior at the University of Minnesota, Twin Cities,
+            <p id="Para1">
+                I am a rising junior at the University of Minnesota, Twin Cities,
                 pursuing a B.S in Computer Science. With my passion for technology and a strong foundation in programming,
                 I am eager to approach new challenges, learn from experienced professionals, and find creative solutions
                 to current issues. <br><br>
             </p>
+            <h2 id="LanguageTag" class="Tag">Experience</h1>
             <a href=mailto:"henry@olig.dev"><img src="../images/email.png" id="EmailButton" class="Icon" alt="Email Me!"></a>
         </div>
     </div>
 </body>
-<script>
-    function buttonToggle(buttonname) {
-        var x = document.getElementById(buttonname);
-        if (x.innerHTML === "Whoa!!") {
-            x.innerHTML = "Awesommeeee";
-        } else {
-            x.innerHTML = "Whoa!!";
-        }
-    }
-    function secretPage() {
-        var x = document.getElementById("Name");
-        y = x.getAttribute('counter')
-        if (y < 1) {
-            window.location.href='./secretforaq.html';
-        }
-        else {
-            x.setAttribute('counter', y - 1)
-        }
-    }
-</script>
 </html>
 
