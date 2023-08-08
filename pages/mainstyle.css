@@ -20,6 +20,7 @@
 #EmailButton {
     min-width: 35px;
     vertical-align: bottom;
+    margin-top: 2vh
 }
 
 
@@ -36,7 +37,7 @@ body {
     padding: 30px;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #header {
@@ -66,11 +67,8 @@ body {
     padding-bottom: 5vh;
 }
 
-.Container {
-    margin-top: 1vh;
-    justify-content: center;
-    display: flex;
-    padding-bottom: 5vh;
+#Aligner {
+    padding-bottom: 2vh;
 }
 
 #Name {
@@ -87,8 +85,29 @@ body {
     margin-left: 0;
 }
 
+#DaikinBlurb{
+    margin-bottom: 1vh;
+}
 
+#DaikinList {
+    text-align: start;
+    width: 70vw;
+    margin: 0;
+}
 
+.List {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    width: 97ch;
+}
+
+h3 {
+    margin-bottom: 1vh
+}
+
+.Blurb {
+    margin-top: 1.5vh;
+}
 
 
 @media only screen and (max-width: 1200px) {
