@@ -85,9 +85,6 @@ body {
     margin-left: 0;
 }
 
-#DaikinBlurb{
-    margin-bottom: 1vh;
-}
 
 #DaikinList {
     text-align: start;
@@ -107,6 +104,18 @@ h3 {
 
 .Blurb {
     margin-top: 1.5vh;
+    margin-bottom: 4vh;
+}
+
+#Columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Column {
+    display: flex;
+    flex-direction: column;
 }
 
 
